@@ -21,7 +21,8 @@ body {
 .logo {
   max-width: 2000px;
   width: 50%;
-  height: 250px;
+  max-height: 1000px;
+  height: auto;
   margin: 10px 200px 10px 400px;
 }
 
@@ -38,8 +39,9 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  position: relative;
-  left: 1050px;
+  position: absolute;
+  left: 1500px;
+  top: 500px;
 }
 
 input {
@@ -73,11 +75,11 @@ input {
   padding: 15px 10px;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.active {
+.navbar .active {
   text-decoration: underline;
 }
 
@@ -97,8 +99,8 @@ input {
 .welcome_content {
   position: absolute;
   text-align: center;
-  top: 600px;
-  left: 700px;
+  top: 1000px;
+  left: 900px;
 }
 
 .cta {
@@ -126,7 +128,7 @@ footer {
   display: inline;
   max-width: 1000px;
   width: 100%;
-  margin: 0;
+  margin: 10px;
   position: relative;
 }
 
