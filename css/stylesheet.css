@@ -14,19 +14,19 @@ body {
 
 .header-image {
   margin: 0px;
-  max-width: 1000px;
+  max-width: 2000px;
   width: 100%;
 }
 
 .logo {
-  max-width: 1400px;
+  max-width: 2000px;
   width: 50%;
   height: 250px;
   margin: 10px 200px 10px 400px;
 }
 
 header {
-  max-width: 1400px;
+  max-width: 2000px;
   width: 100%;
   background-size: cover;
   background-color: #f2f2f2;
