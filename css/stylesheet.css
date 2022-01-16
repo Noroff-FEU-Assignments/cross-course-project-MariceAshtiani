@@ -12,15 +12,22 @@ body {
 
 /*Header styling*/
 
-.logo {
-  width: 650px;
-  height: 350px;
-  padding: 20px 325px;
+.header-image {
   margin: 0px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.logo {
+  max-width: 1400px;
+  width: 50%;
+  height: 250px;
+  margin: 10px 200px 10px 400px;
 }
 
 header {
-  max-width: 100%;
+  max-width: 1400px;
+  width: 100%;
   background-size: cover;
   background-color: #f2f2f2;
   margin: 0px;
@@ -31,9 +38,13 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 200px;
+  position: relative;
+  left: 1050px;
 }
 
 input {
+  max-width: 1400px;
+  width: 100%;
   font-size: 1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -42,22 +53,28 @@ input {
   width: 100%;
 }
 
-nav {
-  background-color: #03588c;
-  height: 30px;
-  width: 100%;
+.navbar ul {
+  list-style: none;
+  background: #03588c;
+  padding: 0;
+  margin: 0;
+  text-align: center;
 }
 
-nav li {
+.navbar li {
   display: inline-block;
-  text-align: center;
 }
 
-nav li a {
-  color: #f2f2f2;
-  text-align: center;
-  padding: 70px;
+.navbar a {
   text-decoration: none;
+  color: #f2f2f2;
+  width: 100px;
+  display: block;
+  padding: 15px 10px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .active {
@@ -68,4 +85,47 @@ nav li a {
 
 .background-image {
   height: 100%;
+}
+
+.welcome {
+  background-image: url("../images/manonmountaincss.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+}
+
+.welcome_content {
+  position: absolute;
+  text-align: center;
+  top: 600px;
+  left: 700px;
+}
+
+.cta {
+  background-color: #023373;
+  color: #f2f2f2;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  border-radius: 50px;
+}
+
+/* footer */
+
+footer {
+  background-color: #1d386a;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 40px;
+  height: auto;
+  margin: 0;
+}
+
+.social-media {
+  border: solid red;
+  display: inline;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0;
+  position: relative;
 }
