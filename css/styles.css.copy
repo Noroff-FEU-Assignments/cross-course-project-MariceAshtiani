@@ -3,19 +3,27 @@
   src: url(../fonts/OpenSans-Regular.ttf);
 }
 
-/*Consistent styling*/
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Header styling*/
 
 .header-image {
   margin: 0px;
-  max-width: 350px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  max-width: 2000px;
+  width: 100%;
 }
 
 .logo {
-  width: 100%;
+  max-width: 2000px;
+  width: 50%;
+  max-height: 1000px;
   height: auto;
+  margin: 10px 300px 10px 500px;
 }
 
 header {
@@ -24,16 +32,6 @@ header {
   background-size: cover;
   background-color: #f2f2f2;
   margin: 0px;
-  position: relative;
-}
-
-body {
-  font-family: "Open Sans", sans-serif;
-  min-height: 100vh;
-  margin: 0px;
-  padding: 0px;
-  display: flex;
-  flex-direction: column;
 }
 
 .search-button {
@@ -42,8 +40,8 @@ body {
   justify-content: space-between;
   width: 200px;
   position: absolute;
-  right: 50px;
-  top: 50px;
+  left: 1500px;
+  top: 500px;
 }
 
 input {
@@ -73,8 +71,8 @@ input {
   text-decoration: none;
   color: #f2f2f2;
   width: 100px;
-  display: inline-block;
-  padding: 5px;
+  display: block;
+  padding: 15px 10px;
   text-transform: uppercase;
   text-align: center;
   margin-left: 30px;
@@ -83,6 +81,26 @@ input {
 
 .navbar .active {
   text-decoration: underline;
+}
+
+/* Home page styling*/
+
+.background-image {
+  height: 100%;
+}
+
+.welcome {
+  background-image: url("../images/manonmountaincss.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+}
+
+.welcome_content {
+  position: absolute;
+  text-align: center;
+  top: 1000px;
+  left: 900px;
 }
 
 .cta {
@@ -94,62 +112,14 @@ input {
   border-radius: 50px;
 }
 
-/*Main content*/
+/* footer */
 
-.welcome {
-  min-height: 100vh;
-  position: relative;
-}
 
-.welcome_content {
-  position: absolute;
-  text-align: center;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-main {
-  flex: 1;
-  background-image: url("../images/manonmountaincss.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.homepage-text {
-  color: #023373;
-  position: relative;
-  max-width: 400px;
-  margin: auto;
-  text-align: center;
-  top: 35%;
-}
-
-.homepage-text h1 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-}
-
-.homepage-text p {
-  font-size: 1rem;
-  font-weight: bolder;
-}
-
-/*footer styling*/
-
-footer {
-  background-color: #1d386a;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 40px;
-  height: auto;
-  margin: 0;
-}
 
 .social-media {
-  display: inline-block;
+  display: inline;
   max-width: 1000px;
   width: 100%;
-  margin: 0px;
+  margin: 10px;
   position: relative;
-  top: 10%;
+}
