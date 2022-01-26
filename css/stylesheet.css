@@ -58,6 +58,12 @@ input {
   width: 100%;
 }
 
+.cart {
+  position: absolute;
+  right: 20px;
+  top: 21%;
+}
+
 .navbar ul {
   list-style: none;
   background: #03588c;
@@ -93,6 +99,17 @@ input {
   text-transform: uppercase;
   padding: 10px 60px;
   border-radius: 50px;
+}
+
+.cta-small {
+  background-color: #023373;
+  color: #f2f2f2;
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+  padding: 5px 40px;
+  border-radius: 50px;
+  position: relative;
+  left: 50%;
 }
 
 /*Home page*/
@@ -137,11 +154,17 @@ input {
 }
 
 /*Products page*/
-.product-header img {
+.product-header img,
+.women-header img,
+.men-header img {
   max-width: 2000px;
   width: 100%;
   max-height: auto;
   margin: 0px 0px 10px 0px;
+}
+
+.product-header {
+  position: relative;
 }
 
 .product-text {
@@ -152,15 +175,15 @@ input {
 }
 
 .product-text h1 {
-  max-width: 400px;
-  width: 100%;
-  text-align: left;
-  color: #f2f2f2;
+  position: absolute;
+  top: 0px;
   font-size: 4vmax;
   text-transform: uppercase;
-  padding: 10px;
+  padding-left: 20px;
+  color: #f2f2f2;
   background-color: rgba(22, 16, 16, 0.8);
   border-radius: 50px;
+  padding: 5px 15px;
 }
 
 .buttons {
@@ -174,44 +197,113 @@ input {
   max-width: 2000px;
   width: 100%;
   height: 400px;
+  margin: 0px;
 }
 
-.explore,
-.snowboard,
-.climb,
-.enjoy-outside,
-.we-have-it {
-  max-width: 1000px;
-  width: 100%;
-  font-size: 1.5vmax;
+.product-images {
+  position: relative;
+}
+
+.product-text h2 {
+  position: absolute;
+  top: 0px;
+  font-size: 2vmax;
   text-transform: uppercase;
   padding-left: 10px;
+  max-width: 2000px;
+  width: 100%;
 }
 
-.explore {
-  bottom: -200px;
-  position: absolute;
-}
-
-.snowboard {
-  position: absolute;
-  bottom: -600px;
-}
-
-.climb {
-  bottom: -1000px;
-}
-
-.enjoy-outside {
+.we-have-it h2 {
   color: #f2f2f2;
-  bottom: -1400px;
 }
 
-.we-have-it {
+/*Women*/
+.women-header {
+  position: relative;
+}
+
+.women-text h1,
+.men-text h1 {
+  position: absolute;
+  top: 0px;
+  font-size: 3vmax;
+  text-transform: uppercase;
+  padding-left: 20px;
   color: #f2f2f2;
-  text-align: right;
-  right: 20px;
-  bottom: -1700px;
+  background-color: rgba(22, 16, 16, 0.8);
+  border-radius: 50px;
+  padding: 5px 30px;
+}
+
+.women-products {
+  max-width: 2000px;
+  width: 100%;
+  margin: auto;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product img {
+  width: 100%;
+  max-height: 300px;
+}
+
+.product-list {
+  font-size: 1vmax;
+}
+
+/*Men*/
+.men-header {
+  position: relative;
+}
+
+/*Product specific*/
+.stormcoat-page {
+  display: flex;
+  flex: 1;
+  margin: auto;
+}
+
+.stormcoat-image img {
+  max-width: 1000px;
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  padding: 40px 20px;
+}
+
+.product-info h1 {
+  font-size: 3.5vmax;
+  padding: 0px 40px;
+}
+
+.product-info p {
+  font-size: 1.5vmax;
+  padding: 0px 40px;
+}
+
+.product-p p {
+  font-size: 1.5vmax;
+  max-width: 400px;
+  padding: 0px 40px;
+}
+
+.uses {
+  font-size: 2vmax;
+  padding-left: 40px;
+  border: solid red;
+}
+
+.product-sizes {
+  font-size: 1.5vmax;
+  display: inline-block;
+  background-color: #04728f;
+  padding: 10px;
+  border-radius: ;
 }
 /*footer styling*/
 
