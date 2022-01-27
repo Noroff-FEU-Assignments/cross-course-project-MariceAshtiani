@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="buy good quality, comfortable and affordable jackets from Rainydays">
-  <title>Rainydays | Contact</title>
+  <title>Rainydays | signin</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
@@ -22,41 +22,40 @@
         <input type="text" placeholder="search">
         <i class="fas fa-search"></i>
       </div>
-      <div class="cart">
-        <i class="fas fa-shopping-cart fa-1.5x"></i>
-      </div>
     </section>
     <nav class="navbar">
       <ul>
         <li><a href="index.html" >Home</a></li>
         <li><a href="women.html">Women</a></li>
-        <li><a href="men.html" >Men</a></li>
+        <li><a href="men.html">Men</a></li>
         <li><a href="about.html">About Us</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-        <li><a href="signin.html">Sign In</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="signin.html"class="active">Sign In</a></li>
       </ul>
     </nav>
   </header>
-  <main class="main-contact">
-      <section>
-          <h1>Contact us</h1>
-          <p>We want to help you as best as we can, and as quickly as we can. Below you can find our contact-information, choose what suits you best.</p>
-      </section>
-      <section>
-        <i class="fas fa-envelope fa-3x"></i>
-        <h2>Email</h2>
-        <p>Email: Support@rainydays.com</p>
-        <p>We try to answer all emails within 24 hours</p>
-      </section>
-      <section>
-        <i class="fas fa-phone-alt fa-3x"></i>
-        <h2>Phone</h2>
-        <p>Phone number: 080001234</p>
-       <p>Our phone-hours are monday-friday from 10AM to 2PM</p> 
-      </section>
-      <div>
-          <a href="products.html" class="cta">Continue shopping</a>
-      </div>
+  <main class="main-signup">
+  <form method="POST">
+    <fieldset>
+      <legend>Sign up</legend>
+      <label for="name">First name</label>
+      <input type="text" id="name" placeholder="your first name" name="name" />
+      <label for="Surname">Surname</label>
+      <input type="text" id="surname" placeholder="your surname" name="surname" />
+      <label for="email">Email</label>
+      <input type="email" placeholder="youremail@email.com" name="email">
+      <label for="phonenumber">Phone number</label>
+      <input type="tel" placeholder="12345678" name="phonenumber">
+      <label for="adress">Adress</label>
+      <input type="text" placeholder="your adress" name="adress">
+      <label for="password">Password</label>
+      <input type="text" placeholder="********" name="Password">
+    </fieldset>
+  </form>
+  <a href="#" class=cta>Sign up</a>
+  <p>By creating an account you agree to Rainydays membership terms and privacy policy</p>
+  <p>Already have an account?</p>
+  <a href="signin.html">Sign in here</a>
   </main>
   <footer>
     <div class="copyright">

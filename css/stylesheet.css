@@ -265,7 +265,7 @@ input {
 .stormcoat-page {
   display: flex;
   flex: 1;
-  margin: auto;
+  margin: 30px;
 }
 
 .stormcoat-image img {
@@ -288,22 +288,49 @@ input {
 
 .product-p p {
   font-size: 1.5vmax;
-  max-width: 400px;
+  max-width: 300px;
   padding: 0px 40px;
 }
 
 .uses {
-  font-size: 2vmax;
-  padding-left: 40px;
-  border: solid red;
+  font-size: 1.5vmax;
+  text-transform: uppercase;
+  margin-top: 100px;
 }
 
 .product-sizes {
   font-size: 1.5vmax;
-  display: inline-block;
-  background-color: #04728f;
-  padding: 10px;
-  border-radius: ;
+  margin: 50px;
+}
+
+.add-to-cart {
+  margin: 50px 10px;
+}
+
+/*Contact page*/
+.main-contact {
+  flex: 1;
+  background-image: url("../images/ski.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*About page*/
+.main-about {
+  background-image: url("../images/skydivingkopi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/*Sign in page*/
+.main-signin,
+.main-signup {
+  background-image: url("../images/canoe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 /*footer styling*/
 
