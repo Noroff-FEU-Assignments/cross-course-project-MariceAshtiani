@@ -309,13 +309,51 @@ input {
 
 /*Contact page*/
 .main-contact {
-  flex: 1;
   background-image: url("../images/ski.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
+  display: grid;
 }
 
+.contact-info h1 {
+  position: relative;
+  left: 60%;
+  font-size: 3vmax;
+  margin: 20px 0px 0px 0px;
+}
+
+.contact-info p {
+  position: absolute;
+  max-width: 300px;
+  left: 55%;
+}
+
+.email-info {
+  position: relative;
+  top: 55%;
+  left: 45%;
+}
+
+.email-info h2 {
+  font-size: 2vmax;
+  position: absolute;
+  left: -0.5%;
+}
+
+.email-info p {
+  position: absolute;
+  top: 90%;
+}
+
+.phone-info {
+  left: 70%;
+}
+
+.contact-button {
+  position: relative;
+  left: 53%;
+}
 /*About page*/
 .main-about {
   background-image: url("../images/skydivingkopi.jpg");
@@ -324,7 +362,31 @@ input {
   min-height: 100vh;
 }
 
-/*Sign in page*/
+.about-text {
+  background-color: rgba(22, 16, 16, 0.8);
+  color: #f2f2f2;
+  max-width: 500px;
+  margin: 30px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.about-text h1 {
+  font-size: 2vmax;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 1.3vmax;
+  text-align: left;
+}
+
+.about-button {
+  position: absolute;
+  left: 80px;
+}
+
+/*Sign in & sign up page*/
 .main-signin,
 .main-signup {
   background-image: url("../images/canoe.jpg");
@@ -332,24 +394,161 @@ input {
   background-repeat: no-repeat;
   min-height: 100vh;
 }
+
+.signin-input,
+.signup-input {
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px;
+  background-color: rgba(22, 16, 16, 0.8);
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 10px 5px;
+}
+
+.signin-input h1,
+.signup-input h1 {
+  text-transform: uppercase;
+  font-size: 3vmax;
+  text-align: center;
+}
+
+.signin-input input,
+label,
+.signup-input input,
+label {
+  max-width: 445px;
+  width: 100%;
+  align-content: center;
+}
+
+.signin-button,
+.signup-button {
+  position: relative;
+  margin: 40px 0px;
+  left: 30%;
+}
+
+.create-account {
+  text-align: center;
+}
+
+.create-account a {
+  color: #f2f2f2;
+  font-size: 1.5vmax;
+}
+
+/* Signed in page*/
+/*Signed up page*/
+.signup-complete {
+  max-width: 700px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px;
+  background-color: rgba(22, 16, 16, 0.8);
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.signup-complete h1 {
+  font-size: 3vmax;
+}
+
+.signup-complete h1,
+p {
+  text-align: center;
+}
+
+.continue-button {
+  position: relative;
+  left: 23%;
+  margin: 40px 0px;
+}
+/* Shopping cart page*/
+.main-shoppingcart,
+.main-checkout {
+  background-image: url("../images/cart.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.main-shoppingcart h1 {
+  position: relative;
+  left: 40%;
+}
+
+.cart-product img {
+  max-width: 300px;
+  width: 100%;
+  max-height: 400px;
+  height: auto;
+  padding: 40px 20px;
+  margin-left: 5%;
+}
+/*checkout success page*/
+.order-success,
+.join {
+  background-color: rgba(22, 16, 16, 0.8);
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #f2f2f2;
+  border-radius: 20px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.order-success h1 {
+  font-size: 3vmax;
+  text-align: center;
+}
+
+.order-success p {
+  font-size: 1.5vmax;
+  text-align: center;
+}
+
+.join {
+  text-align: center;
+}
+
+.join-button {
+  position: relative;
+  left: 43%;
+}
+
 /*footer styling*/
 
 footer {
   background-color: #1d386a;
   color: #f2f2f2;
-  text-align: center;
   padding: 40px;
   height: auto;
-  margin: 0;
+  margin-top: 20px;
+  display: flex;
+  flex: 1fr 1fr 1fr 1fr 1fr;
 }
 
-.social-media {
-  display: inline-block;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0px;
+footer ul li a {
+  color: #f2f2f2;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.copyright {
   position: relative;
-  top: 10%;
+  left: 10%;
 }
 
 /*mobile*/

@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="buy good quality, comfortable and affordable jackets from Rainydays">
-  <title>Rainydays | signin</title>
+  <title>Rainydays | Sign up</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
@@ -22,6 +22,9 @@
         <input type="text" placeholder="search">
         <i class="fas fa-search"></i>
       </div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart fa-1.5x"></i>
+      </div>
     </section>
     <nav class="navbar">
       <ul>
@@ -30,42 +33,91 @@
         <li><a href="men.html">Men</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="signin.html"class="active">Sign In</a></li>
+        <li><a href="signin.html">Sign In</a></li>
       </ul>
     </nav>
   </header>
   <main class="main-signup">
-  <form method="POST">
-    <fieldset>
-      <legend>Sign up</legend>
-      <label for="name">First name</label>
-      <input type="text" id="name" placeholder="your first name" name="name" />
-      <label for="Surname">Surname</label>
-      <input type="text" id="surname" placeholder="your surname" name="surname" />
-      <label for="email">Email</label>
-      <input type="email" placeholder="youremail@email.com" name="email">
-      <label for="phonenumber">Phone number</label>
-      <input type="tel" placeholder="12345678" name="phonenumber">
-      <label for="adress">Adress</label>
-      <input type="text" placeholder="your adress" name="adress">
-      <label for="password">Password</label>
-      <input type="text" placeholder="********" name="Password">
-    </fieldset>
-  </form>
-  <a href="#" class=cta>Sign up</a>
-  <p>By creating an account you agree to Rainydays membership terms and privacy policy</p>
-  <p>Already have an account?</p>
-  <a href="signin.html">Sign in here</a>
+    <section class="signup-input">
+      <h1>Sign up</h1>
+      <form method="POST">
+        <label for="name">First name</label>
+        <input type="text" id="name" placeholder="your first name" name="name" />
+        <label for="Surname">Surname</label>
+        <input type="text" id="surname" placeholder="your surname" name="surname" />
+        <label for="email">Email</label>
+        <input type="email" placeholder="youremail@email.com" name="email">
+        <label for="phonenumber">Phone number</label>
+        <input type="tel" placeholder="12345678" name="phonenumber">
+        <label for="adress">Adress</label>
+        <input type="text" placeholder="your adress" name="adress">
+        <label for="password">Password</label>
+        <input type="text" placeholder="********" name="Password">
+      </form>
+      <div class="signup-button">
+        <a href="signedup.html" class=cta>Sign up</a>
+      </div>
+      <div>
+        <p>By creating an account you agree to Rainydays membership terms and privacy policy</p>
+        <div class="create-account">
+          <p >Already have an account?</p>
+          <a href="signin.html">Sign in here</a>
+        </div>
+       </div>
+    </section>
   </main>
   <footer>
+    <section>
+      <ul>
+        <h2>Help</h2>
+        <li><a href="#">Customer Service</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Return</a></li>
+        <li><a href="#">Delivery</a></li>
+      </ul>
+     </section>      
+     <section>
+       <ul>
+        <h2>About us</h2>
+        <li><a href="#">Our values</a></li>
+        <li><a href="#">Climate and environment</a></li>
+        <li><a href="#">Animal welfare</a></li>
+        <li><a href="#">Materials</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </section> 
+    <section>
+      <ul>
+        <h2>Tips and advice</h2>
+        <li><a href="#">Everything you need for Mount Everest</a></li>
+        <li><a href="#">How to choose the right jacket</a></li>
+        <li><a href="#">How to care for your new jacket</a></li>
+        <li><a href="#">Sizing advice</a></li>
+        <li><a href="#">Durability</a></li>
+      </ul>
+    </section>
+    <section>
+      <ul>
+        <h2>Activities</h2>
+        <li><a href="#">Hiking</a></li>
+        <li><a href="#">Exploring</a></li>
+        <li><a href="#">Skiing</a></li>
+        <li><a href="#">Camping</a></li>
+        <li><a href="#">Canoeing</a></li>
+      </ul>
+    </section>
+    <section>
+      <ul>
+        <h2>Contact</h2>
+        <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
+        <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+      </ul>
+    </section>
     <div class="copyright">
           Copyright &copy;
     </div>
-    <div class="social-media">
-      <i class="fab fa-facebook-square fa-2x"></i>
-      <i class="fab fa-instagram fa-2x"></i>
-      <i class="fab fa-twitter fa-2x"></i>
-    </div>
- </footer>
+  </footer>
 </body>
 </html>
