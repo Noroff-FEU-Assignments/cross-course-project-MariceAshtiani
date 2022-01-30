@@ -1,0 +1,412 @@
+@media screen and (max-width: 850px) {
+  /*general*/
+  .logo {
+    width: 200px;
+  }
+
+  .search-button {
+    display: flex;
+    position: static;
+    width: 100%;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+
+  .search-button > input {
+    width: 150px;
+  }
+
+  #hamburger-label {
+    display: inline-block;
+    color: #f2f2f2;
+    padding: 5px 20px;
+    cursor: pointer;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .hamburger-icon {
+    color: #f2f2f2;
+    padding: 20px;
+  }
+
+  .main-nav {
+    display: none;
+    z-index: 10;
+  }
+
+  #hamburger-menu:checked ~ .main-nav {
+    display: block;
+    position: absolute;
+    background-color: #f2f2f2;
+  }
+
+  .main-nav li {
+    display: block;
+  }
+
+  .navbar ul {
+    text-align: left;
+  }
+
+  .navbar a {
+    color: black;
+  }
+
+  #cart {
+    display: none;
+  }
+
+  .nav-cart {
+    display: inline-block;
+    color: #f2f2f2;
+    cursor: pointer;
+  }
+
+  /*Homepage*/
+
+  .homepage-text {
+    width: 40%;
+    background-color: #f2f2f286;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  /*products*/
+  .product-text h2 {
+    font-size: 1.5em;
+    padding-left: 10px;
+    margin-right: 0px;
+    max-width: 600px;
+  }
+
+  .product-text h3 {
+    display: inline-block;
+    font-size: 1.5em;
+    padding-left: 10px;
+    max-width: 500px;
+    padding: 0;
+    margin-top: 300px;
+  }
+
+  /*Women*/
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .product p {
+    font-size: 1em;
+  }
+
+  /*product-specific*/
+  .stormcoat-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 30px;
+  }
+
+  .stormcoat-image {
+    grid-row: 1/4;
+  }
+
+  .cart-stuff {
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 20px;
+    padding-left: 40px;
+  }
+
+  .price {
+    margin-top: 10px;
+  }
+
+  /*shopping cart*/
+  .shopping-cart {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .join {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .main-shoppingcart h2 {
+    margin-top: 0;
+  }
+
+  /*footer*/
+  #help,
+  #about,
+  #tips,
+  #activities {
+    display: none;
+  }
+
+  .footer-content {
+    justify-content: center;
+  }
+
+  /*about*/
+  .about-text h1 {
+    font-size: 2em;
+  }
+
+  .about-text p {
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  /*contact*/
+
+  #contact ul {
+    display: flex;
+    padding: 0;
+  }
+
+  #contact li {
+    padding: 10px;
+  }
+
+  #contact,
+  #contact h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .contact {
+    margin: 0 10%;
+    background-color: rgba(255, 255, 255, 0.568);
+    padding: 0 10px;
+  }
+
+  /*sign in*/
+  .signin-input h1 {
+    font-size: 1.5em;
+  }
+
+  .signin-btn {
+    font-size: 1em;
+  }
+
+  .create-account a {
+    font-size: 1em;
+  }
+
+  .order-success h1 {
+    font-size: 1.5rem;
+  }
+  .order-success p {
+    font-size: 1rem;
+  }
+
+  .join h2 {
+    font-size: 1rem;
+  }
+
+  /*signedup signedin*/
+  .signup-complete p {
+    font-size: 1em;
+  }
+
+  .signedup-btn {
+    font-size: 1.2em;
+  }
+
+  .signup-complete {
+    max-width: 400px;
+  }
+
+  .order-success {
+    padding-right: 0px;
+  }
+
+  .order-success p {
+    font-size: 0.8em;
+    margin: 0 10px;
+  }
+
+  .signup-complete h1 {
+    font-size: 1.5em;
+  }
+
+  /*Checkout*/
+  .join {
+    max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /*products*/
+  .shop-men,
+  .shop-women {
+    padding: 5px 15px;
+    font-size: 1em;
+  }
+
+  .product-text h2,
+  .product-text h3 {
+    font-size: 1em;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .product-text h3 {
+    margin-top: 150px;
+  }
+
+  .product-images img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    margin: 0px;
+  }
+
+  .product-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /*product specific*/
+
+  .stormcoat-page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 10px;
+  }
+
+  .stormcoat-image {
+    grid-column: 1;
+    grid-row: 1;
+    width: 200px;
+    margin: 0 auto;
+  }
+
+  .cart-stuff {
+    grid-row: 3;
+    grid-column: 1;
+    margin-top: 0;
+    padding-left: 40px;
+  }
+
+  .add-to-cart {
+    width: 100px;
+    padding: 5px 20px;
+    font-size: 0.7em;
+  }
+
+  .product-info p,
+  .price,
+  .product-sizes {
+    font-size: 0.8em;
+  }
+
+  .uses i {
+    font-size: 2em;
+  }
+
+  /*about*/
+  .about-text h1 {
+    font-size: 1.5em;
+  }
+
+  .about-text p {
+    font-size: 0.8em;
+    text-align: left;
+  }
+
+  .about-btn {
+    font-size: 1em;
+    margin-left: 10px;
+  }
+
+  /*contact*/
+
+  .email-info {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .phone-info {
+    grid-row: 3;
+    grid-column: 1/3;
+    margin-top: 50px;
+  }
+
+  .contact-button {
+    grid-row: 4;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+
+  .contact-btn {
+    padding: 5px 10px;
+  }
+
+  /*signin, signup, signedup, signedin*/
+
+  .signin-input,
+  .signup-input {
+    max-width: 300px;
+  }
+
+  .signin-input input,
+  .signup-input input {
+    width: 200px;
+  }
+
+  .signup-complete {
+    max-width: 300px;
+  }
+
+  .signup-complete h1 {
+    font-size: 1.3em;
+  }
+
+  .signup-complete p {
+    font-size: 0.7em;
+  }
+
+  .signedup-btn {
+    font-size: 0.7em;
+  }
+
+  .cart-product img {
+    width: 100px;
+  }
+
+  .payment-info td:first-child {
+    padding-right: 20px;
+  }
+
+  .checkout-button,
+  .shopping-button,
+  .signup-btn {
+    font-size: 0.7em;
+  }
+
+  .join {
+    width: 300px;
+    padding-bottom: 20px;
+  }
+
+  .order-success,
+  .join {
+    width: 300px;
+    font-size: 0.7em;
+  }
+
+  .order-success h1 {
+    font-size: 1.5rem;
+  }
+
+  .order-success p {
+    font-size: 1rem;
+  }
+}
