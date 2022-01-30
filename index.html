@@ -14,29 +14,66 @@
 </head>
 <body>
   <header>
-    <section class="header-image">
-       <a href="index.html"><img src="images/Rainydays.png" alt="Logo text Rainydays Pushing the comfort zone" class="logo"></a>
-    </section>
-    <section>
+      <div class="header-image">
+        <a href="index.html"><img src="images/Rainydays.png" alt="Logo text Rainydays Pushing the comfort zone" class="logo"></a>
+      </div>
       <div class="search-button">
         <input type="text" placeholder="search">
         <i class="fas fa-search"></i>
       </div>
-      <div class="cart">
-        </a><i class="fas fa-shopping-cart fa-1.5x"></i>
-      </div>
-    </section>
     <nav class="navbar">
-      <ul>
+      <label for="hamburger-menu"><i class="fas fa-bars" id="hamburger-label"></i></label>
+      <input type="checkbox" id="hamburger-menu">
+      <ul class="main-nav">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="women.html">Women</a></li>
         <li><a href="men.html">Men</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="signin.html">Sign In</a></li>
-        <li><a href="shoppingcart.html">Shoppingcart</a></li>
+        <li><a href="signin.html">Sign In</a></li>        
+        <li>
+          <label for="cart-popup"><i class="fas fa-shopping-cart fa-1.5x" id="cart"></i></label>
+          <input type="checkbox" id="cart-popup">
+          <div class="your-cart">
+              <h1>Your cart</h1>
+              <div class="popup-content">
+                <section>
+                   <img src="images/men/hamed-darzi-u42GjVgZgV0-unsplash.jpg" alt="Storm coat regular" width="100px">
+                </section>
+                <section>
+                  <h2>Storm Coat</h2>
+                  <p>$129</p>
+                 </section>
+                 <section class="popup-btn">
+                   <a href="shoppingcart.html" class="cta-small popup-button">Proceed to checkout</a>
+                 </section>
+              </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="nav-cart">
+        <li>
+          <label for="cart-pop-small"><i class="fas fa-shopping-cart fa-1.5x"></i></label>
+          <input type="checkbox" id="cart-pop-small">    
+          <div class="your-cart">
+            <h1>Your cart</h1>
+            <div class="popup-content">
+              <section>
+                 <img src="images/men/hamed-darzi-u42GjVgZgV0-unsplash.jpg" alt="Storm coat regular" width="100px">
+              </section>
+              <section>
+                <h2>Storm Coat</h2>
+                <p>$129</p>
+               </section>
+               <section class="popup-btn">
+                 <a href="shoppingcart.html" class="cta-small popup-button">Proceed to checkout</a>
+               </section>
+            </div>
+        </div>
+        </li>
       </ul>
     </nav>
+
   </header>
   <main class="main-index">
     <section class="homepage-text">
@@ -51,7 +88,8 @@
     </section>
   </main>
   <footer>
-    <section>
+    <div class="footer-content">
+    <section id="help">
       <ul>
         <h2>Help</h2>
         <li><a href="#">Customer Service</a></li>
@@ -60,7 +98,7 @@
         <li><a href="#">Delivery</a></li>
       </ul>
      </section>      
-     <section>
+     <section id="about">
        <ul>
         <h2>About us</h2>
         <li><a href="#">Our values</a></li>
@@ -71,7 +109,7 @@
         <li><a href="#">Gallery</a></li>
       </ul>
     </section> 
-    <section>
+    <section id="tips">
       <ul>
         <h2>Tips and advice</h2>
         <li><a href="#">Everything you need for Mount Everest</a></li>
@@ -81,7 +119,7 @@
         <li><a href="#">Durability</a></li>
       </ul>
     </section>
-    <section>
+    <section id="activities">
       <ul>
         <h2>Activities</h2>
         <li><a href="#">Hiking</a></li>
@@ -91,14 +129,16 @@
         <li><a href="#">Canoeing</a></li>
       </ul>
     </section>
-    <section>
+    <section id="contact">
+      <h2>Contact</h2>
       <ul>
-        <h2>Contact</h2>
+
         <li><a href="#"><i class="fab fa-facebook-square fa-2x"></i></a></li>
         <li><a href="#"><i class="fab fa-instagram fa-2x"></i></a></li>
         <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
       </ul>
     </section>
+  </div>
     <div class="copyright">
           Copyright &copy;
     </div>
