@@ -88,23 +88,54 @@
   </nav>
 </header>
   <main class="main-contact">
-    <div class="contact">
-      <section class="contact-info">
+      <div class="contact-info">
           <h1>Contact us</h1>
           <p>We want to help you as best as we can, and as quickly as we can. Below you can find our contact-information, choose what suits you best.</p>
-      </section>
-      <section class="email-info">
+      </div>
+      <div class="contact">
+      <form id="contactform">
+        <div>
+          <label>
+            Name (required)
+            <input name="firstname" id="name" placeholder="Name"/>
+          </label>
+          <div class="form-error" id="nameError">Please enter your full name</div>
+        </div>
+        <div>
+          <label>
+            Subject (min. length 10 characters)
+            <input name="subject" id="subject" placeholder="Subject" />
+          </label>
+          <div class="form-error" id="subjectError">The subject must be at least 10 characters</div>
+        </div>
+        <div>
+          <label>
+            Email
+            <input name="email" id="email" placeholder="Email" />
+          </label>
+          <div class="form-error" id="emailError">Pleace enter a valid email-adress</div>
+        </div>
+        <div>
+          <label>
+            Phone number (must be min. 8 characters)
+            <input name="phone" id="phone" placeholder="Phone Number" />
+          </label>
+          <div class="form-error" id="phoneError">Your phone number must be at least 8 characters</div>
+        </div>
+        <button>Submit</button>
+      </form>
+      <div class="email-info">
         <i class="fas fa-envelope fa-3x"></i>
         <h2>Email</h2>
         <p>Email: Support@rainydays.com</p>
         <p>We try to answer all emails within 24 hours</p>
-      </section>
-      <section class="phone-info">
+      </div>
+      <div class="phone-info">
         <i class="fas fa-phone-alt fa-3x"></i>
         <h2>Phone</h2>
         <p>Phone number: 080001234</p>
        <p>Our phone-hours are monday-friday from 10AM to 2PM</p> 
-      </section>
+      </div>
       <div class="contact-button">
           <a href="products.html" class="cta contact-btn">Continue shopping</a>
       </div>
@@ -166,5 +197,6 @@
           Copyright &copy;
     </div>
   </footer>
+  <script src="js/form.js"></script>
 </body>
 </html>
