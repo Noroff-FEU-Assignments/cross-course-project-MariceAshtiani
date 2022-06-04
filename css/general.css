@@ -58,10 +58,18 @@ input {
 #cart {
   color: #000000;
   font-size: 2vmax;
-  left: 65%;
+  left: 90%;
   cursor: pointer;
-  padding: 20px;
+  padding: 5px;
   position: relative;
+  max-width: 30px;
+  margin-left: 5px;
+}
+
+.cart-counter {
+  position: relative;
+  left: 90%;
+  color: red;
 }
 
 .navbar {
@@ -96,16 +104,8 @@ input {
 }
 
 #hamburger-label,
-#hamburger-menu,
-#cart-popup,
-#cart-pop-small,
-.your-cart {
+#hamburger-menu {
   display: none;
-}
-
-.popup-button {
-  color: white !important;
-  margin-bottom: 10px;
 }
 
 .cart-image {
@@ -115,9 +115,7 @@ input {
   background-size: cover;
 }
 
-.popup-button {
-  font-size: 0.7em !important;
-}
+
 .navbar .active {
   text-decoration: underline;
 }
@@ -125,7 +123,7 @@ input {
 .cta {
   background-color: #023373;
   color: #f2f2f2;
-  font-size: 3vmax;
+  font-size: 2vmax;
   text-transform: uppercase;
   padding: 10px 60px;
   border-radius: 50px;

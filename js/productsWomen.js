@@ -5,17 +5,17 @@ const cartList = document.querySelector(".cart-list");
 const totalContainer = document.querySelector(".total");
 let cartArray = [];
 
+
 femaleProductList.forEach(function(product) {
     femaleProductContainer.innerHTML +=
     `
     <div class="femaleproduct">
-    <h2>Your cart:</h2>
     <a href="stormcoatwomen.html?id=${product.id}">
-    <h3>${product.name}</h3>
+    <h2>${product.name}</h2>
     <img src="${product.image}" alt="${product.name}">
     <p>Price: ${product.price} $</p>
     </a>
-    <button class="atc" data-product="${product.id}">Add to cart</button>
+    <button id="item-${product.id}" class="atc" data-product="${product.id}">Add</button>
     </div>
     `
 })
@@ -23,9 +23,24 @@ femaleProductList.forEach(function(product) {
 const buttons = document.querySelectorAll(".atc")
 buttons.forEach(function(button){
     button.onclick=function(event){
+
         const itemToAdd = femaleProductList.find(item => item.id === event.target.dataset.product);
-        cartArray.push(itemToAdd);
-        showCart(cartArray);
+        const addBtn = document.getElementById(`item-${itemToAdd.id}`);
+        
+        const addBtnText = addBtn.innerText;
+        if (addBtnText === 'Add') {
+            addBtn.innerText = "Remove";
+            cartArray.push(itemToAdd);
+        } else {
+            addBtn.innerText = "Add";
+            cartArray = cartArray.filter(item => item.id !== itemToAdd.id);
+        }
+        console.log({cartArray});
+        localStorage.setItem('carts',JSON.stringify(cartArray))
+
+        const cartCounter = document.querySelector(".cart-counter");
+        const carts = JSON.parse(localStorage.getItem('carts'));
+        cartCounter.innerText = carts.length;
     }
 })
 
