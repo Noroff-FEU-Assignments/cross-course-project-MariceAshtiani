@@ -42,4 +42,4 @@ buttons.forEach(function(button) {
         const carts = JSON.parse(localStorage.getItem('carts'));
         cartCounter.innerText = carts.length;
     }
-})
+}) 

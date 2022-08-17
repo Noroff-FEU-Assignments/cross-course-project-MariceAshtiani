@@ -6,7 +6,7 @@ const totalContainer = document.querySelector(".total");
 let cartArray = [];
 
 
-femaleProductList.forEach(function(product) {
+ femaleProductList.forEach(function(product) {
     femaleProductContainer.innerHTML +=
     `
     <div class="femaleproduct">
