@@ -98,7 +98,7 @@
   /*Women*/
   .femaleproduct-container, .maleproduct-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
   .femaleproduct-container h2, .maleproduct-container h2 {
@@ -119,11 +119,6 @@
 
 
   /*product-specific*/
-  .stormcoat-page {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 30px;
-  }
 
   .stormcoat-image {
     grid-row: 1/4;

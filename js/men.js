@@ -29,7 +29,7 @@ async function getMensProducts() {
                 }
         }
         catch(error) {
-                console.log(eror);
+                console.log(error);
                 productContainer.innerHTML = message("error", error);
         }
 }

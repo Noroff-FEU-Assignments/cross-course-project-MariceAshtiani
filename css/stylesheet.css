@@ -186,18 +186,30 @@
 }
 
 /*Product specific*/
-.stormcoat-page {
+.specific-result {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 30px;
 }
 
-.stormcoat-image img {
+.specific-result h2 {
+  text-align: center;
+}
+
+.single-product {
   max-width: 1000px;
-  width: 100%;
-  max-height: 400px;
-  height: auto;
-  padding: 40px 20px;
+  width: 95%;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.product-description {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.product-description p {
+  text-align: left;
 }
 
 .product-info h1 {
@@ -235,6 +247,7 @@
   font-weight: bold;
   margin-top: 45px;
   text-align: left;
+  margin-left: 50px;
 }
 
 .product-sizes {
