@@ -1,25 +1,29 @@
-# Your project title
+# Rainydays
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://user-images.githubusercontent.com/95356770/194562038-55c2125d-a85c-445d-9f44-71249579bd0a.png)
 
-A simple overview of the use/purpose of the project.
+A project for a fictional company called Rainydays, selling outdoor Jackets.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+Initially, the aim for this project was to create a responsive website for the fictional company called Rainydays, using only HTML and CSS. Later on we implemented JavaScript to add the products in an array, and displaying them on the page using JavaScript instead of HMTL. We also used JavaScript for a cart system. The last touches on this website was to use WordPress as a headless CMS, with the WooCommerce plugin, using the REST API to display the products on the page. 
 
-You can add some bullet points if you'd like to:
+Stages of development:
 
-- List item 1
-- List item 2
-- List item 3
+- Creating a style tile in Adobe XD
+- Creating a prototype in Adobe XD
+- Using only HTML and CSS to create the website
+- Implementing the products using JavaScript instead of HTML
+- Adding a cart function with JavaScript
+- Use WordPress as a headless CMS for the products, fetching the REST API
+
 
 ## Built With
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
+- [HTML5]
+- [CSS]
 
 ## Getting Started
 
