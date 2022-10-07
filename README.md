@@ -39,6 +39,9 @@ Stages of development:
 
 1. Clone the repo
 
+```bash
+https://github.com/Noroff-FEU-Assignments/cross-course-project-MariceAshtiani.git
+```
 
 2. Open with Visual Studio Code, use Live server (VSC extension) to view the site.
 
