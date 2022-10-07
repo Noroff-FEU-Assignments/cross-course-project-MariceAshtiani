@@ -48,6 +48,7 @@ https://github.com/Noroff-FEU-Assignments/cross-course-project-MariceAshtiani.gi
 
 2. Open with Visual Studio Code, use Live server (VSC extension) to view the site.
 
+Deployed site: https://suspicious-hugle-fd4727.netlify.app/index.html
 
 ## Contributing
 
