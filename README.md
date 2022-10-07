@@ -6,7 +6,7 @@ A project for a fictional company called Rainydays, selling outdoor Jackets.
 
 ## Description
 
-Initially, the aim for this project was to create a responsive website for the fictional company called Rainydays, using only HTML and CSS. Later on we implemented JavaScript to add the products in an array, and displaying them on the page using JavaScript instead of HMTL. We also used JavaScript for a cart system. The last touches on this website was to use WordPress as a headless CMS, with the WooCommerce plugin, using the REST API to display the products on the page. 
+Initially, the aim for this project was to create a responsive website for the fictional company called Rainydays, using only HTML and CSS. Later on we implemented JavaScript to add the products in an array, and displaying them on the page using JavaScript instead of HTML. We also used JavaScript for a cart system. The last touches on this website was to use WordPress as a headless CMS, with the WooCommerce plugin, using the REST API to display the products on the page. 
 
 Stages of development:
 
@@ -20,17 +20,17 @@ Stages of development:
 
 ## Built With
 
-# Design
+### Design
 
 - Adobe XD
 
-# Language
+### Language
 
 - HTML5
 - CSS
 - JavaScript
 
-# CMS
+### CMS
 
 - Wordpress
 - WooCommerce
